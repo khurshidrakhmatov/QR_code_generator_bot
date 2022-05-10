@@ -7,7 +7,7 @@ from pyzbar.pyzbar import decode
 from PIL import Image
 
 
-token = '5073339010:AAFN2VWKx4w84w8RF2RyOb-sxHchM24Bwu0'
+token = 'bot token here'
 bot = telebot.TeleBot(token)
 
 @bot.message_handler(commands=['start'])
@@ -45,7 +45,7 @@ def start(message):
 
         bot.send_message(message.chat.id,'Hello, {0.first_name}, Welcome to QrCode Creating bot  '.format(message.from_user),reply_markup=markup)
 
-    elif message.from_user.username == 'Cyber_defender1':
+    elif message.from_user.username == 'your username':
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         btn1 = types.KeyboardButton("ℹ️ About us ℹ️")
         btn2 = types.KeyboardButton("Qr Code generate")
